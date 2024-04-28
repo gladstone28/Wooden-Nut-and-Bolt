@@ -4,133 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
-    <title>Souvenir Crafting Steps</title>
+    <link href="styles.css" rel="stylesheet">
+    <title>Crafting Steps for Wooden Clock Souvenir</title>
 </head>
 
 <body>
+    <header>
+        <h1>Crafting Steps for Wooden Clock Souvenir</h1>
+    </header>
 
-    <div class="container my-5">
-        <h1 class="text-center mb-4">Crafting Steps for Wooden Clock Souvenir</h1>
-        <div class="row">
-            <!-- Design and Planning Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">1. Design and Planning</h5>
-                        <p class="card-text">Click to see details.</p>
-                        <a href="#designDetails" class="btn btn-primary" data-bs-toggle="collapse">View Details</a>
-                        <div id="designDetails" class="collapse">
-                            <ul>
-                                <li>Sketch the design including dimensions.</li>
-                                <li>Choose the type of wood.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <main class="container">
+        <section class="card" id="designPlanning">
+            <h2>Design and Planning</h2>
+            <button onclick="toggleDetails('designDetails')">View Details</button>
+            <div class="details" id="designDetails">
+                <ul>
+                    <li>Sketch the design including dimensions.</li>
+                    <li>Choose the type of wood.</li>
+                </ul>
             </div>
+        </section>
 
-            <!-- Woodworking Card -->
-
-            i
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">2. Woodworking</h5>
-                        <p class="card-text">Click to see details.</p>
-                        <a href="#woodworkingDetails" class="btn btn-primary" data-bs-toggle="collapse">View Details</a>
-                        <div id="woodworkingDetails" class="collapse">
-                            <ul>
-                                <li>Cut a piece of wood to the required size for the stand.</li>
-                                <li>Shape the wood to the desired profile, including angles and curves.</li>
-                                <li>Sand the wood to a smooth finish.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <section class="card" id="woodworking">
+            <h2>Woodworking</h2>
+            <button onclick="toggleDetails('woodworkingDetails')">View Details</button>
+            <div class="details" id="woodworkingDetails">
+                <ul>
+                    <li>Cut a piece of wood to the required size for the stand.</li>
+                    <li>Shape the wood to the desired profile, including angles and curves.</li>
+                    <li>Sand the wood to a smooth finish.</li>
+                </ul>
             </div>
-            <!-- Creating the Recess for the Clock Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">3. Creating the Recess for the Clock</h5>
-                        <p class="card-text">Click to see details.</p>
-                        <a href="#recessDetails" class="btn btn-primary" data-bs-toggle="collapse">View Details</a>
-                        <div id="recessDetails" class="collapse">
-                            <ul>
-                                <li>Measure the diameter of the clock insert.</li>
-                                <li>Use a Forstner bit to create a hole for the clock.</li>
-                                <li>Sand any rough edges within the recess.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </section>
+
+        <section class="card" id="creatingRecess">
+            <h2>Creating the Recess for the Clock</h2>
+            <button onclick="toggleDetails('recessDetails')">View Details</button>
+            <div class="details" id="recessDetails">
+                <ul>
+                    <li>Measure the diameter of the clock insert.</li>
+                    <li>Use a Forstner bit to create a hole for the clock.</li>
+                    <li>Sand any rough edges within the recess.</li>
+                </ul>
             </div>
-            <!-- Finishing Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">4. Finishing</h5>
-                        <p class="card-text">Click to see details.</p>
-                        <a href="#finishingDetails" class="btn btn-primary" data-bs-toggle="collapse">View Details</a>
-                        <div id="finishingDetails" class="collapse">
-                            <ul>
-                                <li>Apply a stain or sealant, if desired, to enhance the wood's color and grain.</li>
-                                <li>Follow with a coat of wood finish for protection and polished look.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </section>
+
+        <section class="card" id="finishing">
+            <h2>Finishing</h2>
+            <button onclick="toggleDetails('finishingDetails')">View Details</button>
+            <div class="details" id="finishingDetails">
+                <ul>
+                    <li>Apply a stain or sealant, if desired, to enhance the wood's color and grain.</li>
+                    <li>Follow with a coat of wood finish for protection and a polished look.</li>
+                </ul>
             </div>
-            <!-- Assembling Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">5. Assembling</h5>
-                        <p class="card-text">Click to see details.</p>
-                        <a href="#assemblingDetails" class="btn btn-primary" data-bs-toggle="collapse">View Details</a>
-                        <div id="assemblingDetails" class="collapse">
-                            <ul>
-                                <li>Insert the quartz clock into the recess.</li>
-                                <li>Secure the clock in place with adhesive or friction fit, if necessary.</li>
-                                <li>Add felt pads to the bottom to prevent scratches on surfaces.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </section>
+
+        <section class="card" id="assembling">
+            <h2>Assembling</h2>
+            <button onclick="toggleDetails('assemblingDetails')">View Details</button>
+            <div class="details" id="assemblingDetails">
+                <ul>
+                    <li>Insert the quartz clock into the recess.</li>
+                    <li>Secure the clock in place with adhesive or a friction fit, if necessary.</li>
+                    <li>Add felt pads to the bottom to prevent scratches on surfaces.</li>
+                </ul>
             </div>
-            <!-- Additional Customization Card -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">6. Additional Customization</h5>
-                        <p class="card-text">Click to see details.</p>
-                        <a href="#customizationDetails" class="btn btn-primary" data-bs-toggle="collapse">View Details</a>
-                        <div id="customizationDetails" class="collapse">
-                            <ul>
-                                <li>Add engravings or decorative elements to personalize the stand.</li>
-                                <li>Consider functional additions like a brass or metal inlay for aesthetic appeal.</li>
-                                <li>Ensure all added decorations do not interfere with the clock mechanism or visibility.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </section>
+
+        <section class="card" id="customization">
+            <h2>Additional Customization</h2>
+            <button onclick="toggleDetails('customizationDetails')">View Details</button>
+            <div class="details" id="customizationDetails">
+                <ul>
+                    <li>Add engravings or decorative elements to personalize the stand.</li>
+                    <li>Consider functional additions like a brass or metal inlay for aesthetic appeal.</li>
+                    <li>Ensure all added decorations do not interfere with the clock mechanism or visibility.</li>
+                </ul>
             </div>
+        </section>
 
+    </main>
 
-
-
-
-            <!-- Repeat the structure above for each step, changing the id and contents accordingly -->
-
-            <!-- Replace this comment with other cards for the remaining steps -->
-
-        </div>
-    </div>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
