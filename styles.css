@@ -56,3 +56,30 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.image-download {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-download img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    /* Removes underline from links */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
